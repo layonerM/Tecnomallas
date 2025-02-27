@@ -82,7 +82,7 @@
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
-      <section class="banner_main" style="position: relative; overflow: hidden; min-height: 80vh;">
+      <section class="banner_main" style="position: relative; overflow: hidden; min-height: 100vh; margin-bottom: 0;">
          <img src="./images/mallas-de-seguridad-hogarseguro-1024x576.webp" alt="Fondo" style="width: 100%; min-height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; object-fit: cover;">
          <div style="position: relative; z-index: 2; padding: 80px 100px; text-align: center;">
             <h1 class="banner-title" style="color: #ffffff; font-family: 'Arial', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
@@ -101,12 +101,17 @@
       </section>
       <!-- end banner -->
       <!-- about section -->
-      <div class="about">
+      <div class="about" style="margin-top: -70px;">
          <div class="container">
             <div class="row d_flex align-items-center">
                <div class="col-md-5">
-                  <div class="about_img modern-img">
-                     <figure><img src="images/mallastec.jpeg" alt="Empresa" class="rounded-image" style="width: 100%; height: auto;" /></figure>
+                  <div class="about_img modern-img" style="border: 5px solid transparent; border-radius: 10px; padding: 5px; 
+                       background: linear-gradient(rgb(78, 135, 201), lightblue); /* Degradado azul */
+                       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+                       position: relative;">
+                     <figure style="margin: 0; overflow: hidden;">
+                        <img src="images/mallastec.jpeg" alt="Empresa" class="rounded-image" style="width: 100%; height: auto; object-fit: cover;" />
+                     </figure>
                   </div>
                </div>
                <div class="col-md-7">
@@ -115,7 +120,9 @@
                      <p style="font-size: 1.2em;">En TecnoMallas nos especializamos en la instalación profesional de redes de seguridad para balcones, ventanas y áreas elevadas. Con años de experiencia en el mercado, nos hemos convertido en líderes en soluciones de prevención de caídas.<br><br>
                      Nuestro compromiso es garantizar la seguridad de su familia y seres queridos, utilizando materiales de alta calidad y técnicas de instalación certificadas que cumplen con los más altos estándares de seguridad.</p>
                   </div>
-                  <a class="read_more" href="https://wa.me/+573214375486" style="font-size: 1.2em;">Solicitar Cotización</a>
+                  <div style="text-align: center;">
+                     <a class="read_more" href="https://wa.me/+573214375486" style="font-size: 1.2em;">Solicitar Cotización</a>
+                  </div>
                </div>
             </div>
          </div>
@@ -160,7 +167,7 @@
          </div>
       </div>
       <!-- shop section -->
-      <div id="about" class="shop security-section">
+      <div id="about" class="shop security-section" style="margin-top: -50px;">
          <div class="container">
             <div class="section-header text-center">
                <span class="subtitle">Nuestra Propuesta</span>
@@ -482,6 +489,38 @@
          @media (max-width: 600px) {
             .navbar-toggler-icon {
                 margin-top: -55px; /* Ajusta el valor según sea necesario */
+            }
+         }
+
+         /* Estilos para mejorar la responsividad */
+         @media (max-width: 768px) {
+            .about .titlepage h2 {
+               font-size: 2em; /* Tamaño de fuente más pequeño para el título */
+            }
+            .about .titlepage p {
+               font-size: 1em; /* Tamaño de fuente más pequeño para el párrafo */
+            }
+            .about .read_more {
+               font-size: 1em; /* Tamaño de fuente más pequeño para el botón */
+            }
+         }
+
+         @media (max-width: 600px) {
+            .cotizacion-text {
+               font-size: 1.5em; /* Tamaño de fuente más pequeño para dispositivos móviles */
+               padding: 10px 20px; /* Ajuste del padding */
+            }
+
+            .features-grid {
+               flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            }
+
+            .feature-item {
+               flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho en pantallas móviles */
+            }
+
+            .navbar-toggler-icon {
+               margin-top: -55px; /* Ajusta el valor según sea necesario */
             }
          }
       </style>
