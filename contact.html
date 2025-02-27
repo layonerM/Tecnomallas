@@ -1,0 +1,212 @@
+<html lang="en"></html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>TecnoMallas</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="./icon/favicon (1).ico" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout position_head">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="./images/logo.png" alt="#" style="width: 120px; height: auto; margin-top: -25px;" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="index.html">Inicio</a>
+                              </li>
+                            
+
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="shop.html">Tienda</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">Contáctanos</a>
+                              </li>
+                              <li class="nav-item d_none login_btn">
+                                 <a class="nav-link" href="https://wa.me/+573214375486" target="_blank">
+                                    <img src="./images/whatsapp-icon-1020x1024-iykox85t.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                                 </a>
+                              </li>
+                              <li class="nav-item d_none sea_icon">
+                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- Our shop section -->
+      <div id="about" class="shop-section">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6">
+                  <div class="contact-form">
+                     <h2 class="section-title" style="font-size: 28px; color: #333; margin-bottom: 15px;">Contáctanos</h2>
+                     <form id="contactForm" action="enviar_formulario.php" method="post" onsubmit="return submitform(event);">
+                        <div class="form-group">
+                           <label for="nombre">Nombre:</label>
+                           <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                           <label for="email">Correo Electrónico:</label>
+                           <input type="email" class="form-control" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="form-group">
+                           <label for="mensaje">Mensaje:</label>
+                           <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                     </form>
+                     <div class="social-icons mt-3">
+                        <a href="https://wa.me/+573214375486" target="_blank" class="whatsapp-icon">
+                           <i class="fa fa-whatsapp" style="font-size: 24px; color: #25D366;"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram-icon">
+                           <i class="fa fa-instagram" style="font-size: 24px; color: #E1306C;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="whatsapp-contact">
+                     <img src="./images/mallas1.jpeg" alt="Contáctanos por WhatsApp" class="img-fluid mb-3" style="border-radius: 10px;">
+                     <a href="https://wa.me/+573214375486" target="_blank" class="whatsapp-button">
+                        <img src="./images/COTIZA-POR-WHATSAPP-1-MIN.png" alt="Contactar por WhatsApp" class="img-fluid">
+                        <div class="whatsapp-overlay">
+                           <i class="fa fa-whatsapp"></i>
+                           <span>Chatear por WhatsApp</span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Mapa de Valledupar -->
+      <div class="map-section" style="margin-bottom: 40px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 text-center">
+                  <h2 class="section-title">Ubicación</h2>
+                  <div class="map-container" style="max-width: 100%; margin: 0 auto; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.155198204198!2d-74.2026466851289!3d10.46335399232712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e1f1c1c1c1c1c1f%3A0x1c1c1c1c1c1c1c1!2sValledupar%2C%20Cesar%2C%20Colombia!5e0!3m2!1ses!2sus!4v1631234567890!5m2!1ses!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <h2 class="section-title" style="font-size: 36px; color: #2C3E50; margin-bottom: 20px; font-weight: bold; text-align: left; font-family: 'Montserrat', sans-serif;">tu decides</h2>
+                  <div style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                     <p style="font-size: 20px; color: #34495E; line-height: 1.8; text-align: left; font-family: 'Montserrat', sans-serif;">Estamos ubicados en Valledupar, Cesar, Colombia. Puedes visitarnos o contactarnos a través de los siguientes medios:</p>
+                     <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 15px; font-size: 18px; font-family: 'Montserrat', sans-serif;"><i class="fa fa-phone" aria-hidden="true"></i> Teléfono: <a href="tel:+573214375486" style="color: #007BFF; text-decoration: none;">3214375486</a></li>
+                        <li style="margin-bottom: 15px; font-size: 18px; font-family: 'Montserrat', sans-serif;"><i class="fa fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:demo@gmail.com" style="color: #007BFF; text-decoration: none;">lucaro-85@hotmail.com</a></li>
+                        <li style="margin-bottom: 15px; font-size: 18px; font-family: 'Montserrat', sans-serif;"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp: <a href="https://wa.me/+573214375486" target="_blank" style="color: #007BFF; text-decoration: none;">Chatear con nosotros</a></li>
+                     </ul>
+                     <p style="font-size: 20px; color: #34495E; line-height: 1.8; text-align: left; margin-top: 20px; font-family: 'Montserrat', sans-serif;">¡Esperamos tu mensaje!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- About Us Section -->
+     
+      <!-- end Our shop section -->
+      <!-- Footer -->
+      <footer class="footer" style="margin-top: 40px;">
+         <div class="container">
+            <div class="footer-content">
+               <div class="logo">
+                  <img src="./images/logo.png" alt="Logo de la Empresa" class="footer-logo"> <!-- Asegúrate de que la ruta del logo sea correcta -->
+               </div>
+               <div class="contact-info">
+                  <p><i class="fa fa-phone" aria-hidden="true"></i> Teléfono: <a href="tel:+573214375486">3214375486</a></p>
+                  <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:demo@gmail.com">lucaro-85@hotmail.com</a></p>
+               </div>
+               <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/tecnomallassas/" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <!-- Agrega más redes sociales si es necesario -->
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function submitform(event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+
+            // Obtén los valores de los campos
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Aquí puedes agregar la lógica para enviar los datos, por ejemplo, usando fetch o XMLHttpRequest
+            console.log('Nombre:', nombre);
+            console.log('Email:', email);
+            console.log('Mensaje:', mensaje);
+
+            // Retorna true si deseas que el formulario se envíe, o false si no
+            return false; // Cambia esto según tu lógica
+         }
+      </script>
+   </body>
+</html>

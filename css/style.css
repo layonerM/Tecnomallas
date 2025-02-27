@@ -1,0 +1,1804 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(css/animate.min.css);
+@import url(css/normalize.css);
+@import url(css/icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(css/meanmenu.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/swiper.min.css);
+@import url(css/slick.css);
+@import url(css/jquery.fancybox.min.css);
+@import url(css/jquery-ui.css);
+@import url(css/nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px;
+}
+
+h2 {
+     font-size: 18px;
+}
+
+h3 {
+     font-size: 18px;
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     float: left;
+     width: 100%;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+
+/**-- heading section --**/
+
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #fff;
+     width: 100%;
+     height: 100%;
+}
+
+.loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader img {
+     width: 280px;
+}
+
+
+/*-- header area --*/
+
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+
+/*-- navigation--*/
+
+.navigation.navbar {
+     float: right;
+     background: #fff;
+     clear: both;
+     padding: 23px 25px !important;
+     border-radius: 64px;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     padding: 0 20px;
+     color: #070404;
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 500;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     color: #03cafc;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+     color: #03cafc;
+}
+
+.navbar-expand-md .navbar-nav {
+     padding-right: 10px;
+}
+
+.login_btn a {
+     background: #03cafc;
+     padding: 9px 32px !important;
+     display: inline;
+     border-radius: 20px;
+     color: #fff !important;
+     margin: 0 10px;
+}
+
+.login_btn a:hover {
+     background: #000 !important;
+}
+
+.sea_icon a {
+     color: #8c8c8c !important;
+}
+
+.header {
+     width: 100%;
+     padding: 30px 30px;
+     background: transparent;
+     position: absolute;
+     z-index: 999;
+     border-top: #090102 solid 11px;
+}
+
+.logo {
+     padding-top: 14px;
+}
+
+
+/** banner section **/
+
+.banner_main {
+     background: #f5f6f6;
+     padding: 40px 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.text-bg {
+     text-align: center;
+}
+
+.text-bg h1 {
+     color: #070404;
+     font-size: 4em;
+     line-height: 76px;
+     padding-bottom: 45px;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+.text-bg .read_more {
+     border: #1a1a1a solid 2px;
+     color: #1a1a1a !important;
+     font-weight: 500;
+     display: block;
+     margin: 0 auto;
+     margin-top: 44px;
+}
+
+#banner1 .carousel-caption {
+     position: inherit;
+     padding: 0;
+}
+
+#banner1 .carousel-indicators {
+     display: none;
+}
+
+#banner1 .carousel-control-prev,
+#banner1 .carousel-control-next {
+     width: 62px;
+     height: 60px;
+     background: transparent;
+     border: #1a1a1a solid 2px;
+     opacity: 1;
+     font-size: 30px;
+     color: #131215;
+     border-radius: 60px;
+     top: 43%;
+}
+
+#banner1 .carousel-control-prev:hover,
+#banner1 .carousel-control-next:hover,
+#banner1 .carousel-control-prev:focus,
+#banner1 .carousel-control-next:focus {
+     background: transparent;
+     border: #03cafc solid 2px;
+     color: #03cafc;
+}
+
+#banner1 a.carousel-control-prev {
+     position: absolute;
+     left: 20px;
+     bottom: 10px;
+}
+
+#banner1 a.carousel-control-next {
+     position: absolute;
+     right: 20px;
+     bottom: 10px;
+}
+
+
+/** end banner section **/
+
+.titlepage h2 {
+     font-size: 35px;
+     color: #2a2a2c;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.read_more {
+     font-size: 17px;
+     background-color: transparent;
+     border: #ffffff solid 2px;
+     color: #1a1a1a;
+     padding: 15px 0px;
+     width: 100%;
+     max-width: 222px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: 500;
+     border-radius: 40px;
+}
+
+.read_more:hover {
+     background: #03cafc;
+     color: #fff !important;
+     transition: ease-in all 0.5s;
+}
+
+
+/** about section **/
+
+.about {
+     border-bottom: #000 solid 1px;
+     padding: 90px 0;
+     background: #f9f9f9;
+}
+
+.about .about_img {
+     margin-left: 0;
+     padding: 20px;
+}
+
+.about .about_img figure {
+     margin: 0;
+     overflow: hidden;
+     border-radius: 15px;
+     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about .about_img figure img {
+     width: 100%;
+     height: auto;
+     transition: transform 0.3s ease;
+}
+
+.about .titlepage {
+     border: none;
+     padding: 30px;
+     background: transparent;
+     margin-right: 0;
+}
+
+.about .titlepage h2 {
+     font-size: 48px;
+     margin-bottom: 30px;
+     color: #03cafc;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     position: relative;
+}
+
+.about .titlepage h2::after {
+     content: '';
+     position: absolute;
+     bottom: -10px;
+     left: 0;
+     width: 80px;
+     height: 4px;
+     background: #03cafc;
+}
+
+.about .titlepage p {
+     color: #333333;
+     font-size: 18px;
+     line-height: 1.8;
+     margin-bottom: 30px;
+     font-weight: 400;
+     text-align: justify;
+}
+
+.about .titlepage p strong {
+     color: #03cafc;
+     font-weight: 600;
+}
+
+.about .read_more {
+     background: #03cafc;
+     color: white !important;
+     border: none;
+     padding: 15px 40px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     border-radius: 30px;
+     box-shadow: 0 4px 15px rgba(3, 202, 252, 0.3);
+     transition: all 0.3s ease;
+}
+
+.about .read_more:hover {
+     background: #0289ac;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 20px rgba(3, 202, 252, 0.4);
+}
+
+
+/** end about section **/
+
+
+/** Our  Glasses section **/
+
+.glasses {
+     padding: 80px 0;
+     background: #f8f9fa;
+}
+
+.glasses .titlepage h2 {
+     font-size: 42px;
+     color: #333;
+     margin-bottom: 40px;
+     font-weight: 700;
+}
+
+.glasses .highlight {
+     color: #03cafc;
+}
+
+.separator {
+     width: 80px;
+     height: 4px;
+     background: #03cafc;
+     margin: 20px auto;
+}
+
+.product-description {
+     font-size: 20px;
+     color: #555;
+     margin-bottom: 50px;
+     line-height: 1.6;
+}
+
+.features-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+     margin-top: 40px;
+}
+
+.feature-item {
+     padding: 30px;
+     background: white;
+     border-radius: 10px;
+     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+     transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+     transform: translateY(-5px);
+}
+
+.feature-item i {
+     font-size: 40px;
+     color: #03cafc;
+     margin-bottom: 20px;
+}
+
+.feature-item h4 {
+     font-size: 20px;
+     color: #333;
+     margin-bottom: 15px;
+     font-weight: 600;
+}
+
+.feature-item p {
+     color: #666;
+     line-height: 1.6;
+}
+
+/* Sección de Seguridad */
+.security-section {
+     padding: 50px 0;
+     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+     overflow: hidden;
+}
+
+.section-header {
+     margin-bottom: 40px;
+}
+
+.section-header .subtitle {
+     color: #03cafc;
+     font-size: 18px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     display: block;
+     margin-bottom: 15px;
+}
+
+.section-header h2 {
+     font-size: 42px;
+     color: #333;
+     font-weight: 700;
+     margin: 0;
+     position: relative;
+}
+
+.security-wrapper {
+     display: flex;
+     gap: 30px;
+     align-items: center;
+     margin-bottom: 40px;
+}
+
+.security-image {
+     flex: 1;
+     position: relative;
+}
+
+.main-image {
+     width: 100%;
+     border-radius: 20px;
+     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.experience-badge {
+     position: absolute;
+     bottom: -30px;
+     right: -30px;
+     background: #03cafc;
+     color: white;
+     padding: 20px;
+     border-radius: 50%;
+     width: 120px;
+     height: 120px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 10px 20px rgba(3, 202, 252, 0.3);
+}
+
+.experience-badge .years {
+     font-size: 32px;
+     font-weight: 700;
+     line-height: 1;
+}
+
+.experience-badge .text {
+     font-size: 14px;
+     text-align: center;
+}
+
+.security-features {
+     flex: 1;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px;
+}
+
+.feature-card {
+     background: white;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+     transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+     width: 60px;
+     height: 60px;
+     background: rgba(3, 202, 252, 0.1);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 20px;
+}
+
+.feature-icon i {
+     font-size: 28px;
+     color: #03cafc;
+}
+
+.feature-details h3 {
+     font-size: 20px;
+     color: #333;
+     margin-bottom: 10px;
+     font-weight: 600;
+}
+
+.feature-details p {
+     color: #666;
+     margin: 0;
+     line-height: 1.6;
+}
+
+.cta-section {
+     background: #03cafc;
+     padding: 30px;
+     border-radius: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: 0 15px 30px rgba(3, 202, 252, 0.3);
+     margin-top: 30px;
+}
+
+.cta-content h3 {
+     color: white;
+     font-size: 28px;
+     margin-bottom: 10px;
+}
+
+.cta-content p {
+     color: rgba(255,255,255,0.9);
+     font-size: 18px;
+     margin: 0;
+}
+
+.cta-button {
+     background: white;
+     color: #03cafc;
+     padding: 15px 40px;
+     border-radius: 30px;
+     font-weight: 600;
+     font-size: 18px;
+     transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+     background: #333;
+     color: white;
+     transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+     .security-wrapper {
+          flex-direction: column;
+     }
+     
+     .security-features {
+          grid-template-columns: 1fr;
+     }
+     
+     .cta-section {
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+     }
+}
+
+
+/** end Our  Glasses section **/
+
+
+/** Our shop section **/
+
+.shop {
+     margin-top: 90px;
+     background: #fefdf9;
+     border-top: #f2f1ed solid 1px;
+     border-bottom: #f2f1ed solid 1px;
+}
+
+.shop .shop_img figure {
+     margin: 0;
+}
+
+.shop .shop_img figure img {
+     width: 100%;
+}
+
+.padding_right0 {
+     padding-right: 0;
+}
+
+.shop .max_width {
+     text-align: left;
+     background: #030404;
+     height: 100%;
+     padding-top: 86px;
+     padding-left: 50px;
+     padding-bottom: 90px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.shop .titlepage {
+     max-width: 612px;
+     width: 100%;
+     float: left;
+}
+
+.shop .titlepage h2 {
+     color: #fff;
+     border-bottom: #fff solid 1px;
+     padding-bottom: 10px;
+     float: left;
+     clear: both;
+}
+
+.shop .titlepage p {
+     color: #fff;
+     font-size: 17px;
+     line-height: 30px;
+     padding: 40px 0px 80px 0;
+     width: 100%;
+     display: inline-block;
+}
+
+.shop .titlepage .read_more {
+     color: #fff !important
+}
+
+
+/** end Our shop section **/
+
+
+/** clients section **/
+
+.clients {
+     padding: 90px 0 70px 0;
+}
+
+.clients .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.clients .titlepage p {
+     color: #2a2a2c;
+     font-size: 17px;
+     line-height: 29px;
+     padding-top: 10px;
+}
+
+.clients_box h3 {
+     color: #2a2a2c;
+     font-size: 26px;
+     line-height: 30px;
+     padding-top: 23px;
+     font-weight: 600;
+}
+
+.clients_box p {
+     color: #2a2a2c;
+     font-size: 17px;
+     line-height: 30px;
+}
+
+.clients_Carousel .carousel-caption {
+     position: inherit;
+     padding: 0;
+}
+
+.clients_box {
+     border: #606060 solid 1px;
+     padding: 40px 32px 40px 0px;
+     float: left;
+     text-align: left;
+     margin-left: 89px;
+}
+
+.clients_box figure {
+     margin: 0;
+     float: left;
+     margin-left: -102px;
+     padding-right: 30px;
+}
+
+#myCarousel .carousel-indicators {
+     bottom: -70px;
+}
+
+#myCarousel .carousel-indicators li {
+     width: 20px;
+     height: 20px;
+     border-radius: 20px;
+     background: #111;
+}
+
+#myCarousel .carousel-indicators .active {
+     background: #8c8a8a;
+}
+
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+     display: none;
+}
+
+
+/** end clients section **/
+
+
+/** contact section **/
+
+.contact {
+     margin-top: 90px;
+}
+
+.contact .main_form h3 {
+     color: #4b4b4c;
+     font-size: 27px;
+     line-height: 30px;
+     text-align: center;
+     display: block;
+     font-weight: 600;
+     padding: 0;
+}
+
+#map {
+     height: 100%;
+     min-height: 732px;
+}
+
+.main_form {
+     position: absolute;
+     z-index: 999;
+     background: #fff;
+     padding: 40px 50px;
+     margin-top: 107px;
+}
+
+.main_form .contactus {
+     border-bottom: #111111 solid 1px;
+     margin-bottom: 25px;
+     width: 100%;
+     height: 57px;
+     background: transparent;
+     color: #4b4b4c;
+     font-size: 18px;
+     font-weight: normal;
+     border-top: inherit;
+     border-left: inherit;
+     border-right: inherit;
+}
+
+.main_form .contactusmess {
+     border-bottom: #111111 solid 1px;
+     margin-bottom: 25px;
+     width: 100%;
+     padding-top: 40px;
+     padding-bottom: 14px;
+     background: transparent;
+     color: #4b4b4c;
+     ;
+     font-size: 18px;
+     font-weight: normal;
+     border-top: inherit;
+     border-left: inherit;
+     border-right: inherit;
+}
+
+.send_btn {
+     background: #03cafc;
+     font-weight: 600;
+     font-size: 18px;
+     width: 100%;
+     color: #fff;
+     height: 50px;
+     border-radius: 30px;
+     margin-top: 20px;
+     transition: ease-in all 0.5s;
+     text-transform: uppercase;
+}
+
+.send_btn:hover {
+     background: #4b4b4c;
+     transition: ease-in all 0.5s;
+}
+
+#request *::placeholder {
+     color: #4b4b4c;
+     opacity: 1;
+}
+
+
+/** end contact section **/
+
+
+/** footer **/
+
+.footer {
+     background-color: #333; /* Color de fondo oscuro */
+     color: white; /* Color del texto */
+     padding: 40px 0; /* Espaciado interno */
+     text-align: center; /* Centrar el texto */
+}
+
+.footer-content {
+     display: flex; /* Usar flexbox para organizar los elementos */
+     justify-content: space-between; /* Espacio entre los elementos */
+     align-items: center; /* Centrar verticalmente */
+     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+     max-width: 1200px; /* Ancho máximo del footer */
+     margin: 0 auto; /* Centrar el footer en la página */
+}
+
+.footer-logo {
+     width: 150px; /* Ajusta el tamaño del logo */
+     margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contact-info {
+     display: flex; /* Usar flexbox para los datos de contacto */
+     flex-direction: column; /* Colocar los elementos en columna */
+     margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contact-title {
+     font-weight: bold; /* Negrita para los títulos de contacto */
+     font-size: 1.1rem; /* Tamaño de fuente aumentado */
+     margin: 5px 0; /* Espaciado entre títulos y texto */
+     color: #25D366; /* Color verde para los títulos */
+}
+
+.contact-info p {
+     margin: 5px 10px; /* Espaciado entre párrafos */
+}
+
+.contact-info a {
+     color: #ffffff; /* Color del enlace */
+     text-decoration: none; /* Sin subrayado */
+     transition: color 0.3s; /* Transición suave */
+}
+
+.contact-info a:hover {
+     color: #25D366; /* Color al pasar el mouse */
+     text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.social-icons {
+     display: flex; /* Usar flexbox para los iconos de redes sociales */
+     margin-top: 20px; /* Espaciado superior */
+}
+
+.social-icons a {
+     color: white; /* Color de los iconos */
+     margin: 0 10px; /* Espaciado entre iconos */
+     font-size: 24px; /* Tamaño de los iconos */
+     transition: color 0.3s; /* Transición suave */
+}
+
+.social-icons a:hover {
+     color: #25D366; /* Color al pasar el mouse */
+}
+
+.copyright {
+     margin-top: 80px;
+     padding-bottom: 20px;
+     background: #fbfdfd;
+}
+
+.copyright p {
+     color: #292929;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+     padding-top: 25px;
+     font-weight: normal;
+}
+
+.copyright a {
+     color: #292929;
+}
+
+.copyright a:hover {
+     color: #03cafc;
+}
+
+
+/** end footer **/
+
+
+/** inner page css **/
+
+.position_head .header {
+     position: inherit;
+     background: #03cafc;
+}
+
+.position_head .glasses,
+.shop {
+     margin-bottom: 90px;
+}
+
+.clients-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.social-badge {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-badge i {
+    margin-right: 8px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.instagram-feed {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.instagram-post {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.post-header .profile-pic {
+    width: 40px; /* Establecer el ancho del ícono */
+    height: 40px; /* Establecer la altura del ícono */
+    border-radius: 50%; /* Hacer que la imagen sea circular */
+    object-fit: cover; /* Asegurarse de que la imagen cubra el área sin distorsionarse */
+    margin-right: 12px;
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.location {
+    font-size: 14px;
+    color: #666;
+}
+
+.instagram-icon {
+    margin-left: auto;
+    color: #e1306c;
+    font-size: 20px;
+}
+
+.post-content {
+    padding: 0 0 15px 0;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.post-text {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.post-stats {
+    padding: 0 15px;
+    display: flex;
+    gap: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.post-stats span i {
+    color: #e1306c;
+    margin-right: 5px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: #f8f9fa;
+    color: #e1306c;
+}
+
+.instagram-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.follow-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.follow-btn i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.follow-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+    color: white;
+}
+
+.contact-form-wrapper {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.title-contact {
+    color: #333;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.subtitle-contact {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.custom-input, .custom-textarea {
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 12px 15px 12px 45px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.custom-input:focus, .custom-textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.form-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.custom-textarea {
+    resize: none;
+}
+
+.custom-textarea + .input-icon {
+    top: 25px;
+    transform: none;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, #007bff, #00a6ff);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+.btn-submit i {
+    margin-left: 8px;
+}
+
+.shop-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+}
+
+.safety-features {
+    margin-top: 30px;
+}
+
+.feature-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.whatsapp-contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp-contact h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.whatsapp-contact p {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.whatsapp-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: #25D366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+}
+
+.whatsapp-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.whatsapp-text {
+    margin-right: 10px;
+}
+
+.whatsapp-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(37, 211, 102, 0.9);
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.whatsapp-overlay i {
+    font-size: 1.5rem;
+}
+
+.whatsapp-overlay span {
+    font-weight: 600;
+}
+
+/* Ajustes para la sección "Sobre Nosotros" */
+.about-us-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0e0e0 100%);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-us-section .section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: #ff2600;
+    font-weight: bold;
+}
+
+/* Ajustes para la galería de imágenes */
+.gallery-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.gallery-section .section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Ajustes para los iconos en la sección de seguridad */
+.feature-item i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Colores de iconos */
+.feature-item i.fa-shield {
+    color: #FFD700;
+}
+
+.feature-item i.fa-home {
+    color: #3C3B6E;
+}
+
+.feature-item i.fa-check-circle {
+    color: #CE1126;
+}
+
+.gradient-title {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #FFD700 33%, #0033A0 33%, #0033A0 66%, #CE1126 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quote-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.whatsapp-contact {
+    display: inline-block;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background: #25D366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+}
+
+.whatsapp-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.whatsapp-text {
+    margin-right: 10px;
+}
+
+.quote-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.quote-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.quote-form .btn-submit {
+    background: #FFD700;
+    color: #333;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.quote-form .btn-submit:hover {
+    background: #FFC107;
+}
+
+.chat-button {
+    display: inline-block; /* Para que el botón se comporte como un bloque */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: background 0.3s ease; /* Transición suave */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.chat-button:hover {
+    background-color: #1da851; /* Color de fondo al pasar el mouse */
+}
+
+.button-group {
+    margin-top: 20px; /* Espacio entre el contenido y los botones */
+    display: flex; /* Usar flexbox para alinear los botones */
+    justify-content: center; /* Centrar los botones */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px; /* Aumentar el espaciado interno para un mejor aspecto */
+    margin: 5px;
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-weight: bold;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color de fondo y transformación */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+.btn-chat {
+    background-color: #dc3545; /* Color de fondo rojo para el botón de chat */
+}
+
+.btn-chat:hover {
+    background-color: #c82333; /* Color de fondo más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+.btn-call {
+    background-color: #28a745; /* Color de fondo verde para el botón de llamada */
+}
+
+.btn-call:hover {
+    background-color: #218838; /* Color de fondo más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+.carousel-item {
+    height: auto; /* Permitir que la altura se ajuste al contenido */
+}
+
+.carousel-item img {
+    width: 1000px; /* Establecer el ancho fijo de 1000px */
+    height: 660px; /* Establecer la altura fija de 660px */
+    object-fit: cover; /* Mantener la proporción de la imagen y cubrir el área */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+.instagram-post .profile-pic {
+    width: 40px; /* Establecer el ancho del ícono */
+    height: 40px; /* Establecer la altura del ícono */
+    border-radius: 50%; /* Hacer que la imagen sea circular */
+    object-fit: cover; /* Asegurarse de que la imagen cubra el área sin distorsionarse */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner_main {
+        padding: 20px; /* Ajustar el padding para móviles */
+    }
+
+    .banner_main h1 {
+        font-size: 3em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .banner_main p {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .about .titlepage h2 {
+        font-size: 1.8em; /* Tamaño de fuente más pequeño para el título en móviles */
+    }
+
+    .about .titlepage p {
+        font-size: 1em; /* Tamaño de fuente más pequeño para el texto en móviles */
+    }
+
+    .about .row {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .about .col-md-5, .about .col-md-7 {
+        width: 100%; /* Asegurarse de que ocupen el 100% del ancho */
+        margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+}
+
+/* Estilos generales para el título del banner */
+.banner-title {
+    font-size: 6em; /* Tamaño de fuente por defecto */
+    margin: 0; /* Eliminar márgenes para mejor alineación */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 3em; /* Tamaño de fuente más pequeño en móviles */
+    }
+    .banner_main {
+     padding: 40px 20px; /* Ajustar el padding para móviles */
+     display: flex;
+     flex-direction: column;
+     justify-content: center; /* Centrar verticalmente */
+     align-items: center; /* Centrar horizontalmente */
+     text-align: center; /* Alinear texto al centro */
+ }
+ 
+}
+
+/* Ajustes para el contenedor del banner */
+
+/* Estilos generales para el párrafo */
+.banner-description {
+    font-size: 1.2em; /* Tamaño de fuente por defecto */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 40px; /* Espaciado inferior */
+    gap: 2px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner-description {
+        font-size: 1em; /* Tamaño de fuente más pequeño en móviles */
+        margin-bottom: 20px; /* Espaciado inferior reducido */
+        padding: 0 10px; /* Espaciado lateral para evitar que el texto toque los bordes */
+    }
+    .botones {
+     display:flex ;
+     font-size: 1em; /* Tamaño de fuente más pequeño en móviles */
+     padding: 8px 16px; 
+   
+    }
+}
