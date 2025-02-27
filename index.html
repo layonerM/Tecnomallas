@@ -89,7 +89,7 @@
                <span class="blu">Bienvenido <br></span>
                <span style="color: #ffcc00;">A TECNOMALLAS</span>
             </h1>
-            <p style="font-size: 2.5em; color: #ffffff; margin-bottom: 20px; background-color: rgba(255, 204, 0, 0.9); padding: 15px 30px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">Cotización 100% gratis</p>
+            <p class="cotizacion-text">Cotización 100% gratis</p>
             <p class="banner-description">Nuestras mallas de seguridad están diseñadas para ofrecer la máxima protección y tranquilidad. Fabricadas con materiales de alta calidad, garantizan durabilidad y resistencia, ideales para proteger a tus seres queridos en balcones, ventanas y áreas elevadas.</p>
             <div style="display: flex; align-items: center; justify-content: center;" class="botones">
                <i class="fa fa-comments" style="font-size: 2em; color: #ffcc00; margin-right: 30px;"></i>
@@ -380,7 +380,7 @@
       </div>
       <!-- end contact section -->
       <!--  footer -->
-       <footer class="footer" style="margin-top: 40px;">
+       <footer class="footer" >
          <div class="container">
             <div class="footer-content">
                <div class="logo">
@@ -441,6 +441,50 @@
             return false;
          }
       </script>
+
+      <style>
+         .cotizacion-text {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 20px;
+            background-color: rgba(255, 204, 0, 0.9);
+            padding: 15px 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+         }
+
+         @media (max-width: 600px) {
+            .cotizacion-text {
+               font-size: 1.5em; /* Tamaño de fuente más pequeño para dispositivos móviles */
+               padding: 10px 20px; /* Ajuste del padding */
+            }
+         }
+
+         .features-grid {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+            justify-content: space-between; /* Espacio entre columnas */
+         }
+
+         .feature-item {
+            flex: 1 1 30%; /* Cada elemento ocupa un 30% del ancho en pantallas más grandes */
+            margin: 10px; /* Espaciado entre elementos */
+            text-align: center; /* Centrar texto */
+         }
+
+         @media (max-width: 600px) {
+            .feature-item {
+                flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho en pantallas móviles */
+            }
+         }
+
+         @media (max-width: 600px) {
+            .navbar-toggler-icon {
+                margin-top: -55px; /* Ajusta el valor según sea necesario */
+            }
+         }
+      </style>
    </body>
 </html>
 

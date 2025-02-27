@@ -35,7 +35,7 @@
      width: auto;
 }
  .mean-container a.meanmenu-reveal span:first-child {
-     margin: 0 
+     margin: 0;
 }
  .mean-container .mean-nav {
      background: #ffffff none repeat scroll 0 0;
@@ -75,7 +75,6 @@
      width: 80%;
      padding: 1em 10%;
      border-top: 1px solid #ccc;
-     border-top: 1px solid #ccc;
      opacity: 1;
      filter: alpha(opacity=1);
      text-shadow: none !important;
@@ -98,7 +97,6 @@
      padding: 1em 25%;
 }
  .mean-container .mean-nav ul li a:hover {
-     ` background: #252525;
      background: rgba(255, 255, 255, 0.1);
 }
  .mean-container .mean-nav ul li a.mean-expand {
@@ -145,9 +143,38 @@
      display: none;
 }
  .mean-container .mean-nav ul li a.mean-expand:hover, .mean-container .mean-nav ul li a.mean-expand:focus {
-     background: #0f69c6 ;
+     background: #0f69c6;
      color: #ffffff;
 }
  .mean-container .mean-nav ul li a:hover {
-     color: #ef4259 ;
+     color: #ef4259;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+    .mean-container .mean-nav ul {
+        display: none; /* Oculta el menú por defecto */
+    }
+
+    .mean-container .mean-nav ul.mean-show {
+        display: block; /* Muestra el menú cuando se activa */
+    }
+
+    .mean-container a.meanmenu-reveal {
+        display: block; /* Muestra el botón de menú en móviles */
+    }
+
+    .mean-container .mean-bar {
+        position: relative; /* Asegura que el menú se posicione correctamente */
+    }
+
+    .mean-container .mean-nav ul li {
+        float: none; /* Elimina el flotado para que los elementos se apilen verticalmente */
+        width: 100%; /* Asegura que cada elemento ocupe el 100% del ancho */
+    }
+
+    .mean-container .mean-nav ul li a {
+        padding: 1em; /* Ajusta el padding para que sea más fácil de tocar */
+        text-align: center; /* Centra el texto en los enlaces */
+    }
 }

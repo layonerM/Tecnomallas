@@ -1789,7 +1789,7 @@ button {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 708px) {
     .banner-description {
         font-size: 1em; /* Tamaño de fuente más pequeño en móviles */
         margin-bottom: 20px; /* Espaciado inferior reducido */
@@ -1799,6 +1799,14 @@ button {
      display:flex ;
      font-size: 1em; /* Tamaño de fuente más pequeño en móviles */
      padding: 8px 16px; 
+     flex-direction: column;
    
     }
+
+    
 }
+@media (max-width: 600px) {
+     .navbar-toggler-icon {
+         margin-top: -50px; /* Ajusta el valor según sea necesario */
+     }
+  }
