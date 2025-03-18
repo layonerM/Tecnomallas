@@ -87,7 +87,7 @@
          <div style="position: relative; z-index: 2; padding: 80px 100px; text-align: center;">
             <h1 class="banner-title" style="color: #ffffff; font-family: 'Arial', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
                <span class="blu">Bienvenido <br></span>
-               <span style="color: #ffcc00;">A TECNOMALLAS</span>
+               <span style="color: #ffcc00;">TECNOMALLAS</span>
             </h1>
             <p class="cotizacion-text">Cotización 100% gratis</p>
             <p class="banner-description">Nuestras mallas de seguridad están diseñadas para ofrecer la máxima protección y tranquilidad. Fabricadas con materiales de alta calidad, garantizan durabilidad y resistencia, ideales para proteger a tus seres queridos en balcones, ventanas y áreas elevadas.</p>
@@ -505,18 +505,16 @@
             }
          }
 
-         @media (max-width: 600px) {
-            .cotizacion-text {
-               font-size: 1.5em; /* Tamaño de fuente más pequeño para dispositivos móviles */
-               padding: 10px 20px; /* Ajuste del padding */
+         /* Ocultar el span "blu" en pantallas menores a 400px */
+         @media (max-width: 400px) {
+            .blu {
+               display: none;
             }
+         }
 
+         @media (max-width: 600px) {
             .features-grid {
                flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-            }
-
-            .feature-item {
-               flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho en pantallas móviles */
             }
 
             .navbar-toggler-icon {
